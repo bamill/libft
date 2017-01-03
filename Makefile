@@ -22,7 +22,7 @@ SRC = ft_strlen.c ft_strcpy.c ft_strncpy.c ft_strchr.c ft_strrchr.c ft_strdup.c 
 	ft_minus_pt.c ft_lstfilter.c ft_square_lst.c ft_is_odd.c ft_lst_is_odd.c ft_is_even.c ft_lst_is_even.c \
 	ft_lst_is_singleton.c ft_lst_is_compound.c ft_lstfirst.c ft_lstrest.c ft_lst_last.c ft_lst_butlast.c \
 	ft_lstrev.c ft_lstfilter_l.c ft_list_remove_if.c ft_sumofsq_lst.c ft_gt_pt.c ft_lstcpy.c ft_lstlen.c \
-	ft_lstdrop.c ft_lsttake.c ft_strtolst.c ft_strsplitlst.c
+	ft_lstdrop.c ft_lsttake.c ft_strtolst.c ft_strsplitlst.c ft_lst_rot.c
 SRCS = $(basename $(SRC))
 OBJ = $(addprefix $(OBJDIR),$(SRC:.c=.o))
 CFLAGS = -O2 -Wall -Werror -Wextra

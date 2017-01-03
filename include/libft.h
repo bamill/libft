@@ -107,5 +107,6 @@ t_list				*ft_strsplitlst(const char *s, char c);
 t_list				*ft_strtolst(char *str);
 t_list				*ft_lsttake(t_list *lst, size_t count);
 t_list				*ft_lstdrop(t_list *lst, size_t count);
+t_list				*ft_lst_rot(t_list *lst, int i);
 
 #endif
