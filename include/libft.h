@@ -6,13 +6,21 @@
 /*   By: bmiller <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 13:27:57 by bmiller           #+#    #+#             */
-/*   Updated: 2016/12/08 21:58:28 by bmiller          ###   ########.fr       */
+/*   Updated: 2017/05/26 01:31:05 by bmiller          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
+# include <unistd.h>
+# include <stdlib.h>
+// # include "namespace.h"
+# include <assert.h>
+# include <errno.h>
+# include <stdio.h>
+# include <fcntl.h>
+# include "get_next_line.h"
 
 typedef struct		s_list
 {
@@ -108,5 +116,7 @@ t_list				*ft_strtolst(char *str);
 t_list				*ft_lsttake(t_list *lst, size_t count);
 t_list				*ft_lstdrop(t_list *lst, size_t count);
 t_list				*ft_lst_rot(t_list *lst, int i);
+int					get_next_line(const int fd, char **line);
+int					ft_getopt(int argc, char * const argv[], const char *os);
 
 #endif
